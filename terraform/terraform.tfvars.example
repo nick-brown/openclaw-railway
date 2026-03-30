@@ -1,0 +1,22 @@
+# Railway
+railway_token = "your-railway-api-token"
+
+# OpenClaw
+openclaw_admin_password = "your-admin-password"
+
+# AI Provider
+anthropic_api_key = "sk-ant-your-anthropic-api-key"
+
+# Telegram
+telegram_bot_token = "123456789:ABCdefGHIjklMNOpqrsTUVwxyz"
+
+# Notion
+notion_api_key = "ntn_your-notion-integration-token"
+
+# Google OAuth2 (for dedicated Gmail account)
+google_client_id     = "your-client-id.apps.googleusercontent.com"
+google_client_secret = "your-client-secret"
+google_refresh_token = "your-refresh-token"
+
+# GitHub repo for Railway deployment
+github_repo = "your-github-username/openclaw"

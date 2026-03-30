@@ -1,0 +1,37 @@
+{
+  "gateway": {
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "mode": "token",
+      "token": "REPLACE_WITH_YOUR_GATEWAY_TOKEN"
+    },
+    "trustedProxies": ["100.64.0.0/10", "10.0.0.0/8", "172.16.0.0/12"],
+    "controlUi": {
+      "allowedOrigins": ["https://YOUR_RAILWAY_URL.up.railway.app"],
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    }
+  },
+  "channels": {
+    "telegram": {
+      "allowFrom": ["YOUR_TELEGRAM_USER_ID"]
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "./workspace",
+      "model": { "primary": "anthropic/claude-sonnet-4-6" },
+      "models": {
+        "anthropic/claude-sonnet-4-6": {},
+        "anthropic/claude-opus-4-6": {}
+      },
+      "heartbeat": {
+        "every": "30m",
+        "target": "none",
+        "lightContext": false,
+        "isolatedSession": false
+      }
+    }
+  }
+}

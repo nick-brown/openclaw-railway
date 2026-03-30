@@ -1,0 +1,14 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/terraform.tfvars
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# OpenClaw runtime state (if running locally)
+.openclaw/
